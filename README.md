@@ -111,9 +111,6 @@ Visit: <http://localhost:4000>
 > MySQL for the database. This application is an app to help children
 > learn different concepts using flash cards. Include login and signup
 
-> could you create for me a read.me file for me about the app you have
-> just created for me and include the promts i wrote in the file
-
 ------------------------------------------------------------------------
 
 ## 👨‍💻 Author
