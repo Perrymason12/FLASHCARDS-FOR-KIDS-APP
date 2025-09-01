@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kid`s Flashcards</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>Flashcards for Kids👶</h1>
+    <nav>
+      <a href="/login">Login</a>
+      <a href="/signup" class="btn">Sign up</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Learn with Flashcards</h2>
+      <p>Create decks, flip cards, and practice concepts the fun way.</p>
+      <a href="/signup" class="btn primary">Get Started</a>
+    </section>
+  </main>
+
+  <footer class="container small">
+    <p>© <span id="year"></span> Kid`s Flashcards</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

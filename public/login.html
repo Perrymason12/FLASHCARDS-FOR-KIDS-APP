@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login — MoE Flashcards</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="container narrow">
+    <h2>Welcome back</h2>
+    <form id="loginForm" class="card">
+      <label>Email <input type="email" name="email" required /></label>
+      <label>Password <input type="password" name="password" required minlength="6" /></label>
+      <button class="btn primary" type="submit">Login</button>
+      <p class="muted">No account? <a href="/signup">Sign up</a></p>
+      <p id="loginError" class="error"></p>
+    </form>
+  </main>
+  <script src="/auth.js"></script>
+</body>
+</html>

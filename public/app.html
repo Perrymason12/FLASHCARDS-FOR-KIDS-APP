@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Study — MoE Flashcards</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="container">
+    <h2>Study Time🕑</h2>
+    <nav>
+      <button id="logoutBtn" class="btn">Logout</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="grid two">
+      <div class="card">
+        <h3>Create / Edit Card</h3>
+        <form id="cardForm">
+          <input type="hidden" name="id" />
+          <label>Front <textarea name="front" required></textarea></label>
+          <label>Back <textarea name="back" required></textarea></label>
+          <label>Tag <input type="text" name="tag" placeholder="e.g., Math, English" /></label>
+          <div class="row">
+            <button class="btn primary" type="submit">Save</button>
+            <button class="btn" type="button" id="clearForm">Clear</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="card">
+        <h3>Your Cards</h3>
+        <button id="showCardsBtn" class="btn">Show Cards Stored</button>
+        <div id="cardsContainer" style="display: none;">
+          <input id="search" placeholder="Filter by text or tag..." />
+          <ul id="cardsList" class="list"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>Practice Mode</h3>
+      <div id="study" class="study">
+        <div id="studyCard" class="study-card">
+          <div id="studyFront" class="face"></div>
+          <div id="studyBack" class="face hidden"></div>
+        </div>
+        <div class="row center">
+          <button id="prevBtn" class="btn">Prev</button>
+          <button id="flipBtn" class="btn primary">Flip</button>
+          <button id="nextBtn" class="btn">Next</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
